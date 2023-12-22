@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1> Esp32 Test 1 </h1>
+
+<div class="tscroll">
+{{ data | safe }}
+
+<br>
+<table>
+    <tr>
+        <td>LED Command:</td>
+        <td> <button type="button" id="led_button">LED</button></td>
+    </tr>
+</table>
+</div>
+<br>
+
+<script src="{{url_for('static', filename='socket_connect.js')}}"></script>
+
+</body>
+</html>
